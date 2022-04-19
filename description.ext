@@ -1,8 +1,8 @@
 
 loadScreen =  "pictures\d1.paa";
 author = "Detachment 1";
-OnLoadName = "Project MAR v1.0";
-onLoadMission = "Project MAR v1.0";
+OnLoadName = "Project MAR v1.01";
+onLoadMission = "Project MAR v1.01";
 enabledebugconsole = 1;
 
 #include "core\fnc\common\dlg.hpp"

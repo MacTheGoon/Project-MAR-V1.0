@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=521;
+	toggles=522;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=11721;
+		nextID=11723;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4410;
+		nextID=4700;
 	};
 	class Camera
 	{
-		pos[]={23274.504,42.363735,18960.508};
-		dir[]={0.86827528,-0.49464038,0.038674396};
-		up[]={0.49415731,0.86908895,0.02201103};
-		aside[]={0.044500183,9.3423296e-008,-0.99904346};
+		pos[]={23134.059,128.7303,18846.594};
+		dir[]={-0.43370345,-0.47338292,-0.76673448};
+		up[]={-0.2330763,0.88084704,-0.41205132};
+		aside[]={-0.87043893,-8.8789966e-007,0.49236318};
 	};
 };
 binarizationWanted=0;
@@ -83192,8 +83192,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={24461.654,2.016701,18067.391};
-						angles[]={0,2.3601446,0};
+						position[]={24461.654,2.0166347,18067.391};
+						angles[]={0,2.3601389,0};
 					};
 					side="Empty";
 					class Attributes
@@ -83201,7 +83201,30 @@ class Mission
 					};
 					id=9953;
 					type="rhsusf_mkvsoc";
-					atlOffset=8.5460644;
+					atlOffset=8.5459986;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_cargo_space";
+							expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=100;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item11
 				{
@@ -83692,10 +83715,11 @@ class Mission
 						reportRemoteTargets=1;
 						receiveRemoteTargets=1;
 						reportOwnPosition=1;
-						pylons="USAF_MISSILE_1Rnd_AIM9X;USAF_MISSILE_1Rnd_AIM9X;saws_apkws_heat_mag_x2;saws_apkws_heat_mag_x2;PylonRack_Missile_AGM_02_x2;PylonRack_Missile_AGM_02_x2;PylonRack_Bomb_GBU12_x2;PylonRack_Bomb_GBU12_x2;;js_m_fa18_atflir;;js_jc_120Rnd_CMChaff_Magazine;js_jc_120Rnd_CMFlare_Magazine;";
+						pylons="USAF_MISSILE_1Rnd_AIM9X;USAF_MISSILE_1Rnd_AIM9X;USAF_PylonRack_1Rnd_AGM154C;USAF_PylonRack_1Rnd_AGM154B;PylonRack_Missile_AGM_02_x2;PylonRack_Missile_AGM_02_x2;USAF_PylonRack_2Rnd_GBU38;USAF_PylonRack_2Rnd_GBU38;;js_m_fa18_atflir;;js_jc_120Rnd_CMChaff_Magazine;js_jc_120Rnd_CMFlare_Magazine;";
 					};
 					id=11719;
 					type="JS_JC_FA18F";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -83764,7 +83788,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={23332.676,5.5050058,18965.186};
-						angles[]={-0,4.6769066,0};
+						angles[]={0,4.6769066,0};
 					};
 					side="Empty";
 					flags=4;
@@ -83773,10 +83797,11 @@ class Mission
 						reportRemoteTargets=1;
 						receiveRemoteTargets=1;
 						reportOwnPosition=1;
-						pylons="USAF_MISSILE_1Rnd_AIM9X;USAF_MISSILE_1Rnd_AIM9X;saws_apkws_heat_mag_x2;saws_apkws_heat_mag_x2;PylonRack_Missile_AGM_02_x2;PylonRack_Missile_AGM_02_x2;PylonRack_Bomb_GBU12_x2;PylonRack_Bomb_GBU12_x2;;js_m_fa18_atflir;;js_jc_120Rnd_CMChaff_Magazine;js_jc_120Rnd_CMFlare_Magazine;";
+						pylons="USAF_MISSILE_1Rnd_AIM9X;USAF_MISSILE_1Rnd_AIM9X;USAF_PylonRack_1Rnd_AGM154C;USAF_PylonRack_1Rnd_AGM154B;PylonRack_Missile_AGM_02_x2;PylonRack_Missile_AGM_02_x2;USAF_PylonRack_2Rnd_GBU38;USAF_PylonRack_2Rnd_GBU38;;js_m_fa18_atflir;;js_jc_120Rnd_CMChaff_Magazine;js_jc_120Rnd_CMFlare_Magazine;";
 					};
 					id=11720;
 					type="JS_JC_FA18F";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -83841,7 +83866,7 @@ class Mission
 				};
 			};
 			id=4430;
-			atlOffset=-0.0018625259;
+			atlOffset=-0.0074501038;
 		};
 		class Item19
 		{
@@ -154833,7 +154858,7 @@ class Mission
 			state=1;
 			class Entities
 			{
-				items=13;
+				items=15;
 				class Item0
 				{
 					dataType="Logic";
@@ -154988,11 +155013,11 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={30549.572,-61.825638,22541.912};
+						position[]={30549.572,-61.826004,22541.912};
 					};
 					id=8367;
 					type="ModuleCurator_F";
-					atlOffset=124.14436;
+					atlOffset=124.144;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -155010,7 +155035,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="k04";
+									value="76561197993725774";
 								};
 							};
 						};
@@ -155098,11 +155123,11 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={30629.789,-61.825638,22638.135};
+						position[]={30629.789,-61.826004,22638.135};
 					};
 					id=8368;
 					type="ModuleCurator_F";
-					atlOffset=124.14436;
+					atlOffset=124.144;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -155120,7 +155145,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="k11";
+									value="76561198262244896";
 								};
 							};
 						};
@@ -155340,7 +155365,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="k03";
+									value="76561197977101066";
 								};
 							};
 						};
@@ -155599,7 +155624,227 @@ class Mission
 											"STRING"
 										};
 									};
-									value="k10";
+									value="76561198070257892";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleInfo";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item13
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={22900.57,127.334,18674.396};
+					};
+					id=11721;
+					type="ModuleCurator_F";
+					atlOffset=124.144;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="#adminLogged";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleInfo";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item14
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={33545.105,-41.736008,26772.922};
+					};
+					id=11722;
+					type="ModuleCurator_F";
+					atlOffset=124.144;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="76561198070257892";
 								};
 							};
 						};
@@ -155684,7 +155929,7 @@ class Mission
 				};
 			};
 			id=8374;
-			atlOffset=25.912453;
+			atlOffset=190.85797;
 		};
 		class Item45
 		{
@@ -192172,7 +192417,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23049.055,3.1900001,18643.848};
-			angle=0.8483519;
+			angle=0.84835178;
 			class Attributes
 			{
 				condition="call{{_x iskindof ""landvehicle"" && speed _x < 1} count thislist > 0  }";
@@ -192193,7 +192438,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23422.564,3.1900001,18625.428};
-			angle=4.7170644;
+			angle=4.7170639;
 			class Attributes
 			{
 				condition="call{{_x iskindof ""helicopter"" && speed _x < 1} count thislist > 0  }";
